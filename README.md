@@ -49,8 +49,15 @@ git clone https://github.com/more-dark/Discord-Message-Spammer.git
 cd Discord-Message-Spammer
 ```
 ```bash
+pip install -r requirements.txt
+```
+```bash
 python messager.py
 ```
+
+   ✅ The tool will now start running.
+
+### 📜 LICENSE REMINDER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 This tool is EXCLUSIVELY for Chat Spaming
@@ -59,6 +66,7 @@ This tool is EXCLUSIVELY for Chat Spaming
 ✅ sharing allowed.
 ✅ Use freely — but only as-is.
 
+See LICENSE file for full terms.
 📞 SUPPORT
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
