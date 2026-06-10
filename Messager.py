@@ -29,19 +29,19 @@ def print_banner():
 
 def print_status(status, message):
     if status == "info":
-        print(f"  ┌─[ℹ️ INFO]────────────────────────────────────────┐")
+        print(f"  ┌─[ℹ️ INFO]─────────────────────────────────────────┐")
         print(f"  │  {message}")
         print(f"  └──────────────────────────────────────────────────┘")
     elif status == "success":
-        print(f"  ┌─[✅ SUCCESS]─────────────────────────────────────┐")
+        print(f"  ┌─[✅ SUCCESS]──────────────────────────────────────┐")
         print(f"  │  {message}")
         print(f"  └──────────────────────────────────────────────────┘")
     elif status == "error":
-        print(f"  ┌─[❌ ERROR]───────────────────────────────────────┐")
+        print(f"  ┌─[❌ ERROR]────────────────────────────────────────┐")
         print(f"  │  {message}")
         print(f"  └──────────────────────────────────────────────────┘")
     elif status == "warning":
-        print(f"  ┌─[⚠️ WARNING]─────────────────────────────────────┐")
+        print(f"  ┌─[⚠️ WARNING]──────────────────────────────────────┐")
         print(f"  │  {message}")
         print(f"  └──────────────────────────────────────────────────┘")
 
@@ -354,7 +354,7 @@ def send_messages_parallel(accounts, messages, interval, spam_count, mode):
                 print_status("error", "All accounts disabled due to errors!")
                 break
             
-            print(f"  └────────────────────────────────────────────────────┘")
+            print(f"  └──────────────────────────────────────────────────┘")
             print(f"  📊 Round {round_num}: {round_success} messages sent | Total: {total_sent}")
             
             time.sleep(interval)
@@ -385,7 +385,7 @@ def main():
     # Time interval
     while True:
         try:
-            print("\n  ╭─[⏱️ TIME INTERVAL SETUP]───────────────────────╮")
+            print("\n  ╭─[⏱️ TIME INTERVAL SETUP]────────────────────────╮")
             print("  │  Examples:                                     │")
             print("  │  - 5 = 5 seconds                               │")
             print("  │  - 0.5 = 500 milliseconds                      │")
@@ -449,7 +449,7 @@ def main():
         if msg.strip():
             messages.append(msg)
             print(f"  │  ✅ Message saved: {msg[:50]}")
-            print("  ╰──────────────────────────────────────────────────╯")
+            print("  ╰──────────────────────────────────────────────╯")
         else:
             print_status("error", "Message cannot be empty!")
             return
